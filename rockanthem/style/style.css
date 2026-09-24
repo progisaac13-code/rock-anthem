@@ -13,31 +13,39 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Inter;
 }
 
 header {
-    background: linear-gradient(135deg, #050509, #160B2B, #102A43);
-    font-family: 'Montsserat';
-    padding: 20px;
+    background: linear-gradient(#792cffa4, rgba(0, 0, 0, 0)), url('../img/banner_official.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 470px;
+}
+
+header .top {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    backdrop-filter: blur(5px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montsserat';
 }
 
-header nav ul {
+header .top nav ul {
     display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10px;
 }
 
-header nav ul li {
+header .top nav ul li {
     list-style: none;
-    padding: 20px 20px 0px 0px;
-    text-transform: uppercase;
-    font-size: 22px;
+    padding: 10px 10px 0px 10px;
 }
 
-header nav ul li a {
+header .top nav ul li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
 }
