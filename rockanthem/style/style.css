@@ -16,12 +16,40 @@
     font-family: Inter;
 }
 
+.offcanvas .offcanvas-header h5 {
+    font-family: 'Montsserat';
+    font-size: 36px;
+}
+
+.offcanvas .offcanvas-body, .offcanvas-header {
+    background: #102A43;
+    color: white;
+}
+
+.offcanvas .offcanvas-body ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.offcanvas .offcanvas-body ul li {
+    text-transform: uppercase;
+    padding: 15px 0px;
+    list-style: none;
+}
+
+.offcanvas .offcanvas-body ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 header {
     background: linear-gradient(#792cffa4, rgba(0, 0, 0, 0)), url('../img/banner_official.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 470px;
+    background-attachment: fixed;
+    padding-bottom: 700px;
 }
 
 header .top {
@@ -33,19 +61,20 @@ header .top {
     font-family: 'Montsserat';
 }
 
-header .top nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 10px;
-}
-
-header .top nav ul li {
-    list-style: none;
-    padding: 10px 10px 0px 10px;
-}
-
-header .top nav ul li a {
-    font-size: 18px;
-    text-decoration: none;
+header .top button.btn-toogle {
+    background: transparent;
+    font-size: 30px;
     color: white;
+}
+
+/* COOMING SOON */
+#comming-soon {
+    padding: 100px 0px;
+    text-align: center;
+}
+
+#comming-soon h2 {
+    font-family: 'Montsserat';
+    font-size: 50px;
+    font-weight: 800;
 }
