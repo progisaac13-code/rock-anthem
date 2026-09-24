@@ -70,11 +70,37 @@ header .top button.btn-toogle {
 /* COOMING SOON */
 #comming-soon {
     padding: 100px 0px;
-    text-align: center;
 }
 
 #comming-soon h2 {
     font-family: 'Montsserat';
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 600;
+    color: #792cff;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+.card1 {
+    display: block;
+}
+
+.card1 .style_music {
+    color: #792cff;
+    padding: 10px 0px;
+    font-size: 18px;
+} 
+
+.card1 h3 {
+    font-size: 32px;
+    color: #160B2B;
+} .card1 p {
+    color: #585858;
+    line-height: 34px;
 }
