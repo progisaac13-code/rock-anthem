@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Montsserat';
+    src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter/static/Inter_18pt-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #050509, #160B2B, #102A43);
+    font-family: 'Montsserat';
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 20px 20px 0px 0px;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
