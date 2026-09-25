@@ -21,7 +21,8 @@
     font-size: 36px;
 }
 
-.offcanvas .offcanvas-body, .offcanvas-header {
+.offcanvas .offcanvas-body,
+.offcanvas-header {
     background: #102A43;
     color: white;
 }
@@ -44,7 +45,7 @@
 }
 
 header {
-    background: linear-gradient(#792cffa4, rgba(0, 0, 0, 0)), url('../img/banner_official.png');
+    background: linear-gradient(#000000a4, rgba(0, 0, 0, 0)), url('../img/banner_official.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,7 +77,7 @@ header .top button.btn-toogle {
     font-family: 'Montsserat';
     font-size: 50px;
     font-weight: 600;
-    color: #792cff;
+    color: #000;
     text-align: center;
 }
 
@@ -95,12 +96,127 @@ header .top button.btn-toogle {
     color: #792cff;
     padding: 10px 0px;
     font-size: 18px;
-} 
+}
 
 .card1 h3 {
     font-size: 32px;
     color: #160B2B;
-} .card1 p {
+}
+
+.card1 p {
     color: #585858;
     line-height: 34px;
+}
+
+/* PLAYER MP3 */
+
+.music-player {
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(135deg,
+            #050509,
+            #160B2B,
+            #102A43);
+
+    border: 1px solid #7B2CFF;
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 25px rgba(123, 44, 255, 0.25);
+
+    color: #F5F5F7;
+}
+
+.music-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.music-cover {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #7B2CFF;
+}
+
+.music-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music-info h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+}
+
+.music-info span {
+    display: block;
+    margin-top: 6px;
+    color: #8A8A96;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.play-btn {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #7B2CFF;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(123, 44, 255, 0.6);
+
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    transform: scale(1.08);
+    background: #B56CFF;
+}
+
+.progress-container {
+    flex: 1;
+}
+
+#progress {
+    width: 100%;
+    accent-color: #7B2CFF;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+    color: #8A8A96;
+}
+
+.volume-btn {
+    background: none;
+    border: none;
+    color: #00C8FF;
+    font-size: 20px;
+    cursor: pointer;
 }

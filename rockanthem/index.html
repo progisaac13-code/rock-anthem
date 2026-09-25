@@ -34,7 +34,8 @@
     <header id="header">
         <div class="top">
             <img src="img/logo.png" width="180" alt="LOGO ROCK ANTHEM">
-            <button class="btn btn-toogle" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i class="fa-solid fa-bars"></i></button>
+            <button class="btn btn-toogle" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <section id="comming-soon">
@@ -45,16 +46,55 @@
                 <img src="img/thumb/MIND OF STEEL.png" width="500" alt="ROCK ANTHEM - MIND OF STEEL">
                 <p class="style_music"><strong>Heavy Modern Rock • Stadium Anthem</strong></p>
                 <h3>ROCK ANTHEM - Mind Of Steel</h3>
-                <p>Uma faixa sobre força interior, resistência e a decisão de <br> permanecer de pé quando tudo parece estar contra você.</p>
+                <p>Uma faixa sobre força interior, resistência e a decisão de <br> permanecer de pé quando tudo parece
+                    estar contra você.</p>
             </div>
             <div class="card2">
                 <img src="img/thumb/WISE AND PRUDENCE.png" width="500" alt="ROCK ANTHEM - WISDOW AND PRUDENCE">
             </div>
         </div>
     </section>
+    <div class="music-player">
+
+        <div class="music-info">
+            <div class="music-cover">
+                <img src="img/thumb/MIND OF STEEL.png" alt="Mind of Steel">
+            </div>
+
+            <div>
+                <h3>MIND OF STEEL</h3>
+                <span>ROCK ANTHEM</span>
+            </div>
+        </div>
+
+        <audio id="audio" src="audio/MIND OF STEEL.mp3"></audio>
+
+        <div class="player-controls">
+
+            <button id="playBtn" class="play-btn">
+                ▶
+            </button>
+
+            <div class="progress-container">
+                <input type="range" id="progress" value="0" min="0" max="100">
+
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <button id="volumeBtn" class="volume-btn">
+                🔊
+            </button>
+
+        </div>
+
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 
 </html>
